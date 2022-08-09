@@ -5,7 +5,7 @@ WINDOWWIDTH = 800
 WINDOWHEIGHT = 600
 TEXTCOLOR = (255, 255, 255)
 BACKGROUNDCOLOR = (0, 0, 0)
-FPS = 40
+FPS = 30
 BADDIEMINSIZE = 10
 BADDIEMAXSIZE = 40
 BADDIEMINSPEED = 8
@@ -71,7 +71,7 @@ wallLeft = pygame.image.load('left.png')
 wallRight = pygame.image.load('right.png')
 
 # "Start" screen
-drawText('Press any key to start the game.', font, windowSurface, (WINDOWWIDTH / 3) - 30, (WINDOWHEIGHT / 3))
+drawText('Press any key to start the game. Made By SiD', font, windowSurface, (WINDOWWIDTH / 3) - 30, (WINDOWHEIGHT / 3))
 drawText('And Enjoy', font, windowSurface, (WINDOWWIDTH / 3), (WINDOWHEIGHT / 3) + 30)
 pygame.display.update()
 waitForPlayerToPressKey()
@@ -222,6 +222,3 @@ while (count > 0):
         waitForPlayerToPressKey()
         count = 3
         gameOverSound.stop()
-
-
-
